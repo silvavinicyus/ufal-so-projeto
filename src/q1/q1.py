@@ -7,11 +7,11 @@ system = platform.system()
 if (system.lower() == "linux"):
   processos = ('google-chrome', 'clear')
 else:
-  processos = ('start chrome', 'cls')
+  processos = ('start chrome', '')
 
 def run_process(processo):  
   os.system(processo)
 
-
-pool = Pool(processes=1)
-pool.map(run_process, processos)
+if __name__ == '__main__':
+  pool = Pool(processes=2)
+  pool.map(run_process, processos)
