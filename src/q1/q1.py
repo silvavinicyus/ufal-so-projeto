@@ -1,11 +1,17 @@
 import os
+import platform
 from multiprocessing import Pool
 
-processos = ('google-chrome', 'clear')
+system = platform.system()
 
-def run_process(processo):
+if (system.lower() == "linux"):
+  processos = ('google-chrome', 'clear')
+else:
+  processos = ('start chrome', 'cls')
+
+def run_process(processo):  
   os.system(processo)
 
 
-pool = Pool(processes=2)
+pool = Pool(processes=1)
 pool.map(run_process, processos)
