@@ -1,10 +1,10 @@
 import os
 from multiprocessing import Pool
 
-processos = ('main.py', 'main2.py')
+processos = ('google-chrome', 'clear')
 
 def run_process(processo):
-  os.system("python3 {}".format(processo))
+  os.system(processo)
 
 
 pool = Pool(processes=2)
