@@ -36,3 +36,7 @@ $ python ./q1.py
 $ python ./q2.py 
 $ python ./q3.py 
 ```
+
+Vídeo sobre uma das questões
+
+https://www.youtube.com/watch?v=WOlHaC7aMz4
