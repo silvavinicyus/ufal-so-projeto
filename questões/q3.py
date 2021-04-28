@@ -22,7 +22,7 @@ def processo1():
 
   logging.info("Saldo após processo 1: ")
   logging.info("Saldo A: %s", saldoA)
-  logging.info("Saldo b: %s", saldoB)
+  logging.info("Saldo B: %s", saldoB)
   logging.info("Finalizando ações do Processo 1")
   lock.release()
 
@@ -42,7 +42,7 @@ def processo2():
 
   logging.info("Saldo após processo 2: ")
   logging.info("Saldo A: %s", saldoA)
-  logging.info("Saldo b: %s", saldoB)
+  logging.info("Saldo B: %s", saldoB)
   logging.info("Finalizando ações do Processo 2")
   lock.release()  
 
@@ -60,4 +60,4 @@ if __name__ == '__main__':
 
   logging.info("\nSaldos finais: ")
   logging.info("Saldo A: %s", saldoA)
-  logging.info("Saldo b: %s", saldoB)
+  logging.info("Saldo B: %s", saldoB)
