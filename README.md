@@ -27,7 +27,7 @@ Opcional:
 - Visual Studio Code
 - Git
 
-Instalação
+Execução do código
 
 ```
 $ git clone https://github.com/silvavinicyus/ufal-so-projeto.git
