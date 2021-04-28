@@ -12,7 +12,7 @@ def thread_function(kid, priority):
 
 if __name__ == '__main__':
   format = "%(message)s"
-  logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
+  logging.basicConfig(format=format, level=logging.INFO)
   priorityTime = [8, 3, 5, 4, 1, 1, 2, 3, 4, 2]
   for i in range(0, 10):
     priority = random.choice(priorityTime)
