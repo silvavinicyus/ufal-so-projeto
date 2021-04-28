@@ -1,14 +1,14 @@
 from threading import Thread, Lock
 import logging
 
-
-
 lock = Lock()
 
 saldoA = 500
 saldoB = 900
 
 def processo1():  
+  lock.acquire()
+
   global saldoA, saldoB
 
   x = saldoA
@@ -18,6 +18,8 @@ def processo1():
   x = saldoB
   x = x + 100
   saldoB = x
+
+  lock.release()
 
 def processo2():
   lock.acquire()
