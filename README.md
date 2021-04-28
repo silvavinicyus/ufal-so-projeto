@@ -13,8 +13,8 @@
 Trabalho sobre processos e threads solicitado pelo professor Tércio Silva.
 
 Equipe:
-- [Dáwid Oliveira] (https://github.com/DawidOliveira)
-- [Vinícyus Silva] (https://github.com/silvavinicyus)
+- [Dáwid Oliveira](https://github.com/DawidOliveira)
+- [Vinícyus Silva](https://github.com/silvavinicyus)
 
 ## ✅  Instalação
 
